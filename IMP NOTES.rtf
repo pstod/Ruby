@@ -1,0 +1,72 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww26680\viewh13160\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 Ruby \
+\
+IO\
+1) p vs puts : p - helps in debug, returns as it is whole , prints whole object\
+					puts does not return , iterates over array elements\
+2) gets.chomp - to chomp newline at end\
+\
+Variable Types\
+Refer sshot\
+\
+STRINGS\
+1) String interpol. =>.   Inside double quotes use #\{var/method/program that returns an exp\}\
+2) Use . To use methods , ex:    \'93Milk\'94.downcase! -> converts str to downcase , without ! It will just return copy of str ie downcast \
+3) .gsub or .sub : substitutes word in a string global vs first occurrence \
+4)strip - clear start and end blanks\
+5)split - tokenisation , multiple variations\
+\
+Numbers\
+1) ** :  exponent\
+2)Precedence  : PEMDAS- Parenthesis , exponent , must , div , add, sub\
+3) integer: -5 , float : 9.45 , decimals : 4.75\
+\
+Methods\
+1).  def method_name(param) \'85\'85 end\
+2) class vs instance method :   classname.method \'97\'97  object.method \
+										 def self.method_name \'97\'97  def method_name\
+3)Procs\
+	var = Proc.new\{ | parameters | ..code.. \}\
+    var[ parameters ] or var.call(parameters)\
+\
+4)Lambdas\
+   Var = lambda\{ | pm | \'85code\'85 \} or stabby lambda var = ->(pm) \{ \'85code\'85 \} \
+   var[pm] or var.call(pm)\
+\
+5)Proc vs Lambdas :   5.1) Lambdas are argument specific while procs are not \
+                  				  5.2) Return behaviour when inside a function :  proc return exits the outer function as well , \
+										 lambdas just exits the lambda body \
+\
+6)Method args :   1)(pm) can be pm1 , pm2 ..and so on \
+						  2)  Named args :    func1( pm1 : , pm2 : ) ; func1(pm2: 12 , pm1 : \'93frr\'94 ) \
+						  3)  Default args :    func1( pm1 : , pm2 : \'93value\'94 ) ;  pm2 can be overwritten can be used without named args\
+						  4)splat args      : gets multiple parameters to a single operation\
+\
+7)Loops :            1)while loop :   while condition \'85.. end\
+						  2) arr.each do | iterator | \
+							  \'85code\'85\
+							  end\
+					      3) for i in 0..10\
+							  p i\
+							  end\
+ 						  4) nested iterators in ruby collections		    \
+\
+  \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
